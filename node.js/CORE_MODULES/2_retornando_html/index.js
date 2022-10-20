@@ -5,7 +5,7 @@ const port = 3000
 const server = http.createServer((req, res) => {
     res.statusCode = 200
     res.setHeader('contenty-Type', 'text/html')
-    res.end('<h1>Texto inserido no servidor</h1>')
+    res.end('<h1>Texto inserido no servidor</h1><p>Texto atualizado</p>')
 })
 
 server.listen(port, () => {
