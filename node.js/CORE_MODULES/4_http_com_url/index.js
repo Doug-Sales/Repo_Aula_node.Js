@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     res.setHeader('contenty-Type', 'text/html')
     
     if (!name) {
-        res.end(`<h1>Preencha o seu nome: <h1/><form method="GET"><input type="text" name="name"/><input type="submit" value="Enviar"></form>`)
+        res.end(`<h1>Preencha o seu nome: <h1/><form method="GET"><input type="text" name="name" pattern="^[A-Za-z]{3,7}" title="3 a 7 caracteres"/><input type="submit" value="Enviar"></form>`)
     } else {
         res.end(`<h1>Seja bem vindo ${name}<h1/>`)
     }
