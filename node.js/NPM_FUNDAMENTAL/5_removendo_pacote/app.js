@@ -1,0 +1,1 @@
+//npm uninstall <modulo_name>
