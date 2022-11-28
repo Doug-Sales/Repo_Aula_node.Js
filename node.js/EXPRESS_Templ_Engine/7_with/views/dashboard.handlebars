@@ -1,0 +1,10 @@
+
+<h1>Dashboard</h1>
+<a href="/">voltar</a>
+{{#if aprovado}}
+    <p>O acesso de desenvolvedor está liberado.</p>
+    <span>O nome do usuário é {{user.name}} {{user.sobrenome}} e sua idade é de {{user.idade}} anos </span>
+{{else}}
+    <p>O acesso de desenvolvedor ainda não está concluido, você será notificado.</p>
+{{/if}}
+<div><a href="/post">Cursos</a></div>
